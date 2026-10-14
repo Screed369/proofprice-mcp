@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "proofprice": {
+      "url": "https://proofprice.com/api/mcp"
+    }
+  }
+}

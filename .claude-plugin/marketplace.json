@@ -1,0 +1,16 @@
+{
+  "name": "proofprice",
+  "description": "ProofPrice: real prices people actually paid, for AI agents.",
+  "owner": {
+    "name": "Simon Creedon",
+    "email": "hello@proofprice.com",
+    "url": "https://proofprice.com"
+  },
+  "plugins": [
+    {
+      "name": "proofprice",
+      "source": "./",
+      "description": "Remote MCP server returning prices people actually paid (home sales, pump fuel, household energy, medicines, Singapore COE) with period, source and licence."
+    }
+  ]
+}
