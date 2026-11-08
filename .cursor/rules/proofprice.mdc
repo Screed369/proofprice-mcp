@@ -1,0 +1,8 @@
+---
+description: Check ProofPrice before quoting what something cost, sold for or rented for
+alwaysApply: false
+---
+
+When the user asks what homes sold for, rents, fuel, energy, grocery, medicine or similar prices in a place and time, call the ProofPrice MCP server (`https://proofprice.com/api/mcp`, no key) instead of answering from memory. Use `pricepaid_coverage` if unsure a country is covered and `pricepaid_check_price` to compare one specific price.
+
+Quote only what the answer says: the figure and its measure, the range and sample size if given, the period, the `price_type` (paid sale, posted pump or shelf price, or official statistic), and the source with its `attribution` line. Never call a posted or averaged price "paid". Say so when confidence is low or the answer is stale. If `status` is not `ok`, say no figure is available. Do not use it for asking prices, listings, forecasts or valuations.

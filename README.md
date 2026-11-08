@@ -118,6 +118,16 @@ Use the address above with the Streamable HTTP transport. Without an MCP client,
 curl "https://proofprice.com/api/v1/fuel?country=ES&area=42&fuel=diesel"
 ```
 
+## Agent skill and rules files (no sign-in)
+
+Tell your agent to check ProofPrice before it quotes a price, and to say whether a figure is a paid sale, a posted price or an official statistic:
+
+- **Claude (skill):** `skills/proofprice/SKILL.md`. Installing this repository as a Claude Code plugin (see above) includes it.
+- **Any agent that reads `AGENTS.md`:** copy [AGENTS.md](AGENTS.md) into your project root.
+- **Cursor:** copy [.cursor/rules/proofprice.mdc](.cursor/rules/proofprice.mdc) into your project's `.cursor/rules/`.
+
+`node tests/check-agent-files.mjs` checks the three files (frontmatter, tool names, honesty rules); CI runs it on every push.
+
 ## Tools
 
 | Tool | What it answers |
