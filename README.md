@@ -130,6 +130,8 @@ Tell your agent to check ProofPrice before it quotes a price, and to say whether
 
 **Vercel AI SDK:** [integrations/vercel-ai-sdk](integrations/vercel-ai-sdk) has three ready tools (copy two files, no key).
 
+**CrewAI:** [integrations/crewai](integrations/crewai) has three ready tools (`pip install` straight from GitHub, no key).
+
 `node tests/check-agent-files.mjs` checks the three files (frontmatter, tool names, honesty rules); CI runs it on every push.
 
 ## Tools
