@@ -126,6 +126,8 @@ Tell your agent to check ProofPrice before it quotes a price, and to say whether
 - **Any agent that reads `AGENTS.md`:** copy [AGENTS.md](AGENTS.md) into your project root.
 - **Cursor:** copy [.cursor/rules/proofprice.mdc](.cursor/rules/proofprice.mdc) into your project's `.cursor/rules/`.
 
+**LangChain / LangGraph:** [integrations/langchain](integrations/langchain) has three ready tools (`pip install` straight from GitHub, no key).
+
 `node tests/check-agent-files.mjs` checks the three files (frontmatter, tool names, honesty rules); CI runs it on every push.
 
 ## Tools
