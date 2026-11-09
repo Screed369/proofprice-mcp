@@ -1,0 +1,12 @@
+{
+  "name": "n8n-nodes-proofprice",
+  "version": "0.1.0",
+  "description": "n8n node that asks ProofPrice what people actually paid. Free, no key, read-only.",
+  "keywords": ["n8n-community-node-package", "proofprice", "prices"],
+  "license": "MIT",
+  "main": "nodes/ProofPrice/ProofPrice.node.js",
+  "files": ["nodes", "README.md"],
+  "scripts": { "test": "node --test test/node.test.js" },
+  "n8n": { "n8nNodesApiVersion": 1, "nodes": ["nodes/ProofPrice/ProofPrice.node.js"] },
+  "repository": { "type": "git", "url": "https://github.com/Screed369/proofprice-mcp", "directory": "integrations/n8n" }
+}

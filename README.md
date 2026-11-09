@@ -132,6 +132,8 @@ Tell your agent to check ProofPrice before it quotes a price, and to say whether
 
 **CrewAI:** [integrations/crewai](integrations/crewai) has three ready tools (`pip install` straight from GitHub, no key).
 
+**n8n:** [integrations/n8n](integrations/n8n) is a node with three operations (copy the folder into `~/.n8n/custom`, no key, no build).
+
 `node tests/check-agent-files.mjs` checks the three files (frontmatter, tool names, honesty rules); CI runs it on every push.
 
 ## Tools
