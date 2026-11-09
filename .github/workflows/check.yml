@@ -31,3 +31,12 @@ jobs:
         working-directory: integrations/vercel-ai-sdk
       - run: npm test
         working-directory: integrations/vercel-ai-sdk
+  crewai:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e integrations/crewai
+      - run: python -m unittest discover -s integrations/crewai/tests
