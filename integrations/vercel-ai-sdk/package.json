@@ -1,0 +1,15 @@
+{
+  "name": "proofprice-ai-sdk",
+  "version": "0.1.0",
+  "description": "Three read-only Vercel AI SDK tools that ask ProofPrice what people actually paid. Free, no key.",
+  "type": "module",
+  "main": "./proofprice-tools.mjs",
+  "types": "./proofprice-tools.d.ts",
+  "exports": { ".": { "types": "./proofprice-tools.d.ts", "default": "./proofprice-tools.mjs" } },
+  "files": ["proofprice-tools.mjs", "proofprice-tools.d.ts", "README.md"],
+  "scripts": { "test": "node --test test/tools.test.mjs" },
+  "peerDependencies": { "ai": ">=5", "zod": ">=3.25" },
+  "devDependencies": { "ai": "^6.0.0", "zod": "^3.25.0" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Screed369/proofprice-mcp", "directory": "integrations/vercel-ai-sdk" }
+}
